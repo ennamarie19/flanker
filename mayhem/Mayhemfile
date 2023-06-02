@@ -1,0 +1,8 @@
+project: flanker
+target: fuzz-flank
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_flank.py
+    libfuzzer: true
